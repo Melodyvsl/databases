@@ -70,7 +70,7 @@ connection.connect(function(err) {
 //The names of all the cities in the Netherlands
 connection.connect(function(err) {
   if (err) throw err;
-  connection.query("SELECT name FROM city WHERE country = Netherlands", function (err, result) {
+  connection.query("SELECT name FROM city WHERE country = 'Netherlands' ", function (err, result) {
     if (err) throw err;
     console.log(result);
   });
